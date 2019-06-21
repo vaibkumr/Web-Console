@@ -1,6 +1,6 @@
 # Web-console
 A simple Information Console for personal websites. Can be used for personal portfolio/resume websites.
-
+Live example: https://timetraveller-san.github.io/
 
 # How to
 - Create your personal data following the template in `data.json`
