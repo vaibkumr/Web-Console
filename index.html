@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,44 +14,52 @@
 </head>
 <body>
   <div id="cover">Time Traveller's Information Console</div>
+  <!-- <div id="cover">Home | Blog | About | Contact</div> -->
   <div class="content">
-    <button class="gui" onclick="gui();fixscroll();">GUI</button>
-    <button class="gui" onclick="alert('Coming soon')">PDF Download</button>
+    <button class="all" id="show_all">Show all</button>
+    <button class="all" onclick="alert('Coming soon')">CV Download</button>
     <div id="console">
-      <pre>
+      <pre id="ascii">
+                 _____ _                  _____                     _ _
+                /__   (_)_ __ ___   ___  /__   \_ __ __ ___   _____| | | ___ _ __
+                  / /\/ | '_ ` _ \ / _ \   / /\/ '__/ _` \ \ / / _ \ | |/ _ \ '__|
+                 / /  | | | | | | |  __/  / /  | | | (_| |\ V /  __/ | |  __/ |
+                 \/   |_|_| |_| |_|\___|  \/   |_|  \__,_| \_/ \___|_|_|\___|_|
+             ->  Cool ASCII art by https://www.kammerl.de/ascii/AsciiSignature.php  <-
 
 
-         _____ _                  _____                     _ _
-        /__   (_)_ __ ___   ___  /__   \_ __ __ ___   _____| | | ___ _ __
-          / /\/ | '_ ` _ \ / _ \   / /\/ '__/ _` \ \ / / _ \ | |/ _ \ '__|
-         / /  | | | | | | |  __/  / /  | | | (_| |\ V /  __/ | |  __/ |
-         \/   |_|_| |_| |_|\___|  \/   |_|  \__,_| \_/ \___|_|_|\___|_|
-                 ->      Your travel lands, i travel time      <-
-
+                Hi, I am Time Traveller.
+                Here are some good things about me.
+                Some more good things about me.
+                The good things just dont end.
 
                 ==================================================
 
-                ->This a console to get information about me.
-                ->Type the commands below and press enter to submit.
-                ->Type !help to get a list of available commands.
-                ->Information console V1.0 by <a href="">timetraveller</a>
+                -> Information console v1.0 by <span class="yellow"><a href="https://github.com/TimeTraveller-San">timetraveller</a></span>. It's open source, feel free to use it for your own personal website.
+                -> This is a console to get information about me.
+                -> Type the commands below and press enter to submit.
+                -> Type help to get a list of available commands.
+                -> Click on "Show all" button to display all the information at once
 
                 ==================================================
       </pre>
-      <pre>
-                “You have power over your mind - not outside events.
-                Realize this, and you will find strength.”
-                                      ― Marcus Aurelius, Meditations
+      <pre id="ascii">
+                “Here's a quote I love,
+                  A very nice quote.”
+                                      ― By someone I admire, for real.
 
       </pre>
     </div>
-    <div class="yolo"><input type= "text" class="commands" value="type here"></div>
+    <div class="input-box">
+      <input  type= "text" class="commands" value="" autofocus="autofocus"/>
+      <span class="unit">></span>
+    </div>
 
 
   </div>
 
   <div class="footer">
-    <p class="foot">TimeTraveller's Info Console | Serious shit 2018 | <a href="https://github.com/TimeTraveller-San/">Github</a></p>
+    <p class="foot">TimeTraveller's Info Console | Serious Stuff 2019 | <a href="https://github.com/TimeTraveller-San/">Github</a></p>
   </div>
 </body>
 </html>

@@ -1,0 +1,49 @@
+{"help":{
+    "help":"display the list of commands and their functions",
+    "info" : "Fetch personal information",
+    "clear" : "Clear screen",
+    "all" : "Print all information",
+    "contact" : "Fetch contact details",
+    "projects" : "Fetch personal information",
+    "technical_strengths" : "Print technical strengths ",
+    "publications" : "Print publications",
+    "any other command" : "command detail"
+  },
+  "info":{
+    "Name" : "Your name",
+    "Sex" : "Your Sex",
+    "Age" : "Your Age"
+  },
+  "contact":{
+    "Email" : "Your email",
+    "Phone" : "Nope",
+    "Github" : "<a href=\"https://github.com/TimeTraveller-San\"  target=\"_blank\">https://github.com/TimeTraveller-San</a>",
+    "Medium" : "<a href=\"https://medium.com/@timetraveller1998\"  target=\"_blank\">https://medium.com/@timetraveller1998</a>",
+    "Twitter" : "<a href=\"http://twitter.com/timetravellertt\"  target=\"_blank\">http://twitter.com/timetravellertt</a>"
+  },
+  "projects":{
+    "Project 1" : "Description and URL",
+    "Project 2" : "Description and URL",
+    "Project 3" : "Description and URL",
+    "Project 4" : "Description and URL"
+  },
+  "technical_strengths":{
+    "Programming Languages" : "Python, C++, Javascript (basic), bash scripting, prolog",
+    "Machine learning" : "OpenAI, Pytorch, Fast.ai, np-pd-sklearn",
+    "Web" : "Webscraping with BeautifulSoup, Flask and WSGIs",
+    "Web Frontend" : "Bootstrap, jquery (basic), CSS, HTML"
+  },
+  "publications":{
+    "Publication 1" : "Details",
+    "Publication 2" : "Details",
+    "Publication 3" : "Details"
+  },
+  "any other command":{
+    "title 1" : "detail 1",
+    "title 2" : "detail 2",
+    "title 3" : "detail 3"
+  },
+  "error":{
+    "Error" : "Invalid command. Type help for help"
+  }
+}
