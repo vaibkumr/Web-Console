@@ -1,4 +1,4 @@
-var url = "https://gist.githubusercontent.com/TimeTraveller-San/ee2ac6407e15f3d5f204282188a96eda/raw/698b4291e8fb724538d6ef12163f7c7b1a0b774e/info.json"
+var url = "https://gist.githubusercontent.com/TimeTraveller-San/8ec2325e47f3168b8a37f6eb009a7923/raw/dba7a4f44ce394af0cbf2c33eb968add599de5c7/aaa_data.json"
 $(document).ready(function() {
   document.getElementsByClassName("commands")[0].value="";
   $.getJSON(url, function(mydata) {
@@ -16,7 +16,7 @@ $(document).ready(function() {
           }
           var command = document.getElementsByClassName("commands")[0].value;
           document.getElementsByClassName("commands")[0].value="";
-          
+
           // alert(mydata)
           // alert(command)
           // alert(command in mydata)
@@ -24,9 +24,18 @@ $(document).ready(function() {
             fixscroll();
             clear();
           }
+          else if(command == "theme pink-skin"){
+            change_theme("pink-skin");
+          }
+          else if(command == "theme dark-gold"){
+            change_theme("dark-gold");
+          }
           else if(command == "all"){
             fixscroll();
             all();
+          }
+          else if(command == "oh no"){
+            easter_egg();
           }
           else if(command in mydata){
             print_console(command, mydata)
@@ -71,6 +80,11 @@ function print_console(command, mydata){
 }
 
 
+function easter_egg(){
+  fixscroll();
+  document.getElementById("console").innerHTML += "<img src=\"https://i.imgur.com/5I7gesN.jpg\" height=\"500\"></img><br><br>";
+}
+
 function info(mydata){
   var keys = Object.keys(mydata.info);
   data = ""
@@ -105,7 +119,7 @@ function all(){
     var html = "<div id=\"wrapper\">";
     for(var key in mydata){
       var data = ""
-      if(key=="error" || key=="help")
+      if(key=="error" || key=="help" || key=="theme")
         continue
       if(key=="info"){
         data += "<div id=box>";
@@ -133,4 +147,27 @@ function all(){
     document.getElementById("console").innerHTML+="<span class=cname>    all:<br></span>";
     document.getElementById("console").innerHTML+=html;
   });
+}
+
+function change_theme(theme){
+  fixscroll();
+  document.getElementById("console").innerHTML+="<p> Theme changed to: " + theme + "<\p>";
+  fixscroll();
+  if(theme=="pink-skin"){
+    document.documentElement.style.setProperty('--main-bg-color', '#585153');
+    document.documentElement.style.setProperty('--second-bg-color', '#e4dccf');
+    document.documentElement.style.setProperty('--console-bg-color', 'rgb(80, 74, 75)');
+    document.documentElement.style.setProperty('--secondary-color', '#e4dccf');
+    document.documentElement.style.setProperty('--footer-background-color', 'rgb(80, 74, 75)');
+    document.documentElement.style.setProperty('--table-bg-color', '#383832');
+  }
+  if(theme=="dark-gold"){
+    document.documentElement.style.setProperty('--main-bg-color', '#0E1111');
+    document.documentElement.style.setProperty('--second-bg-color', '#F5D76E');
+    document.documentElement.style.setProperty('--console-bg-color', '#323435');
+    document.documentElement.style.setProperty('--secondary-color', '#F5D76E');
+    document.documentElement.style.setProperty('--footer-background-color', '#151617');
+    document.documentElement.style.setProperty('--table-bg-color', '#383832');
+  }
+
 }

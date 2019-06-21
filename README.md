@@ -17,6 +17,9 @@ A simple Information Console for personal websites. Can be used for personal por
 - Do not remove the "error" key, it's the default for a wrong input
 - All values support html format. Use italics, bolds, font, size, links etc however you like
 
+# theme
+- `change_theme()` in `console.js` lets you change theme through the console
+- It changes the css variables in `style.css`
 
 # Customization
 - Make changes in style.css
